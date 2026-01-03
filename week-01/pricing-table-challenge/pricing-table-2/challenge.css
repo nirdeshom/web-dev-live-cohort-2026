@@ -1,0 +1,149 @@
+/* Challenge CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #1b1b1b;
+}
+
+.container {
+  width: 100%;
+}
+
+.header {
+  /* Add your styles here */
+  text-align: center;
+}
+
+h1 {
+  /* Add your styles here */
+  color: rgb(255, 91, 26);
+}
+
+.subtitle {
+  /* Add your styles here */
+  color: grey;
+}
+
+.pricing-container {
+  /* Add your styles here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.pricing-card {
+  /* Add your styles here */
+  border: 1px solid grey;
+  text-align: center;
+  padding: 20px 20px;
+  background: #353535;
+  border-radius: 12px;
+}
+
+.card-header {
+  /* Add your styles here */
+  color: wheat;
+}
+
+.icon {
+  /* Add your styles here */
+  padding: 10px 0;
+  font-size: 25px;
+}
+
+.price-block {
+  /* Add your styles here */
+  background: rgb(73, 73, 73);
+  border-radius: 8px;
+  padding: 8px 0;
+
+}
+
+.price {
+  /* Add your styles here */
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(255, 63, 15);
+}
+
+.period {
+  /* Add your styles here */
+  color: grey;
+}
+
+.features {
+  /* Add your styles here */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.features li {
+  /* Add your styles here */
+  list-style-type: none;
+  color: wheat;
+  font-size: 16px
+}
+
+.features li.disabled {
+  /* Add your styles here */
+  color: grey;
+}
+
+.join-btn {
+  /* Add your styles here */
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  color: rgb(255, 91, 26);
+  border: 1px solid rgb(255, 91, 26);
+  font-weight: bold;
+  background: transparent;
+}
+
+.popular-tag{
+  background: yellow;
+  width: 140px;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 20px;
+  position: absolute;
+  top: -14px;
+  left: 55px;
+}
+
+/* Custom Class Modifiers */
+.warrior {
+  /* Add your styles here */
+  position: relative;
+  background: #3a2727;
+  border: 1px solid rgb(255, 91, 26);
+}
+
+.champion {
+  /* Add your styles here */
+  border: 1px solid rgb(255, 240, 26);
+}
+
+.champion .price {
+  /* Add your styles here */
+  color: rgb(255, 240, 26);
+}
+
+.champion .join-btn {
+  /* Add your styles here */
+  color: rgb(255, 240, 26);
+  border: 1px solid rgb(255, 240, 26);
+}
