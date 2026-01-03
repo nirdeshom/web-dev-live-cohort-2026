@@ -109,7 +109,7 @@ input[type='text'] {
 
 /* .hero-image {
 } */
-
+/* 
 @media (min-width: 640px) {
   .hero {
   }
@@ -180,4 +180,4 @@ input[type='text'].dark {
 }
 
 input[type='text']::placeholder {
-}
+} */
