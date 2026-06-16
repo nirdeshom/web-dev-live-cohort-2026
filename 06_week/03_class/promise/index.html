@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <h1>Promise</h1>
+</body>
+<script>
+    fetch('https://api.freeapi.app/api/v1/public/randomproducts')
+    .then((response) => {
+        return response.json()
+    })
+    .then((obj) => {
+        const product = obj.data.data;
+        console.log(product);
+        product.forEach((products)=>{
+            console.log(products.title);
+        })
+    })
+    .catch((e) => {
+        console.log("ERROR:", e);
+    })
+    .finally(() => {
+        console.log("Finally Kaam ho hi gya");
+    })
+</script>
+</html>

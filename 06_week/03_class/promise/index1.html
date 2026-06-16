@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <h1>Promise</h1>
+    <ul class="item"></ul>
+
+</body>
+<script>
+    const ul = document.querySelector('.item')
+
+    function renderToScreen(obj){
+        const product = obj.data.data;
+        console.log(product);
+
+        product.forEach((products)=>{
+            const li = document.createElement('li');
+            // const img = document.createElement('img')
+
+            // img.src = products.thumbnail
+            // document.body.appendChild(img)
+
+            li.innerText = `${products.title}`
+            ul.appendChild(li)
+
+        })
+    }
+
+    fetch('https://api.freeapi.app/api/v1/public/randomproducts')
+        .then((response) => {
+            return response.json()
+        })
+        .then(renderToScreen)
+        .catch((e) => {
+            console.log("Error:", e);
+        })
+        .finally(() => {
+            console.log("Promise Solve");
+        })
+</script>
+</html>
