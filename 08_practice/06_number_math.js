@@ -47,9 +47,9 @@ console.log(Math.trunc(5.44));  // Decimal Hatao
 console.log(Math.max(1, 3, 5, 4, 3));  // Sabse Bada
 console.log(Math.min(2, 3, 1, 4, 3));  // Sabse Chhota
 console.log(Math.pow(2, 3));  // 2 * 2 * 2
-console.log(Math.sqrt(25));  // 
+console.log(Math.sqrt(25));  // 5
 
-console.log(Math.random());  // 0-1
+console.log(Math.random());  // 0-1 ramdom number print hoga
 
 // Real Project Example - Random OTP Generator:
 // 1000 se 9999 ke beech 4 digit OTP
