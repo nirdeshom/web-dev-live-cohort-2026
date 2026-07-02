@@ -4,7 +4,7 @@ let name = "nirdesh kumar";
 let myName = new String('my name is nirdesh');
 
 console.log(typeof name);
-console.log(typeof myName);  // typeof object and value array ke andar
+console.log(typeof myName);  // typeof object and value array format
 
 // browser aapko String object ke saare methods dikha deta
 console.log(Object.prototype);  
