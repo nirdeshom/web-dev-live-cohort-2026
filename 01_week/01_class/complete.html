@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Revision - HTML</title>
+</head>
+
+<body>
+    <!-- Heading Tag -->
+    <h1>Heading type 1</h1>
+    <h2>Heading type 1</h2>
+    <h3>Heading type 1</h3>
+    <h4>Heading type 1</h4>
+    <h5>Heading type 1</h5>
+    <h6>Heading type 1</h6>
+
+    <!-- Paragraph tag -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam necessitatibus aliquid libero sapiente quaerat
+        repellat a consectetur porro iste. Adipisci ratione tempora suscipit. Iusto, facilis unde quia magnam libero
+        mollitia!
+    </p>
+
+    <!-- Text formatting tag -->
+    <b>Bold text</b> <br />
+    <strong>Important text</strong> <br />
+    <i>Italic text</i> <br />
+    <em>Enphasize text</em> <br />
+    <mark>Mark text</mark> <br />
+    <del>Delete text</del> <br />
+    <p>SubScript = H<sub>2</sub>O</p> <br />
+    <p>SuperScript<sup>top text</sup>hello</p>
+    <small>this text is small</small>
+
+    <!-- link -->
+    <a target="_blank" href="https://www.w3schools.com/html/html_lists.asp">Click and learn anchor tag</a><br>
+
+    <a target="_self" href="mailto:example@gmail.com">Mail to</a><br>
+
+    <a href="tel:+919555032005">call me</a>
+    <hr />
+
+    <!-- Unordered List -->
+     <ul type="circle">
+        <li>Iten 1</li>
+        <li>Iten 2</li>
+        <li>Iten 3</li>
+     </ul>
+
+     <!-- Ordered List -->
+     <ol type="I">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+     </ol>
+
+     <hr />
+     <!-- nested list -->
+      <ul>
+        <li>Item One
+            <ol>
+                <li>Apple</li>
+                <li>Banana</li>
+            </ol>
+        </li>
+      </ul>
+
+      <!-- Table -->
+       <table border="1">
+        <caption>User Data</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Email</th>
+                <th>College</th>
+                <th>Branch</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nirdesh</td>
+                <td>1000000000</td>
+                <td>nirdesh@gmail.com</td>
+                <td>Jawahar Lal Nehru</td>
+                <td>Information Technology</td>
+            </tr>
+            <tr>
+                <td>Omjeet</td>
+                <td>1000000000</td>
+                <td>nirdesh@gmail.com</td>
+                <td colspan="2">Jawahar Lal Nehru</td>
+                <!-- <td>Information Technology</td> -->
+            </tr>
+            <tr>
+                <td rowspan="4">Anil</td>
+                <td>1000000000</td>
+                <td>nirdesh@gmail.com</td>
+                <td>Jawahar Lal Nehru</td>
+                <td>Information Technology</td>
+            </tr>
+            <tr>
+                <td>1000000000</td>
+                <td>nirdesh@gmail.com</td>
+                <td>Jawahar Lal Nehru</td>
+                <td>Information Technology</td>
+            </tr>
+            <tr>
+                <td>1000000000</td>
+                <td>nirdesh@gmail.com</td>
+                <td>Jawahar Lal Nehru</td>
+                <td>Information Technology</td>
+            </tr>
+            <tr>
+                <td>1000000000</td>
+                <td>nirdesh@gmail.com</td>
+                <td>Jawahar Lal Nehru</td>
+                <td>Information Technology</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Data</td>
+            </tr>
+        </tfoot>
+       </table>
+
+       <!-- form -->
+        <h1>Form</h1>
+        <form action="" method="GET">
+            <div>
+                <label for="">Name</label>
+                <input type="text" name="name" id="" placeholder="Enter a name" required>
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="email" id="">
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password" name="password" id="">
+            </div>
+            <div>
+                <label for="">Mobile</label>
+                <input type="number" name="number" id="">
+            </div>
+            <div>
+                <label for="">Color</label>
+                <input type="color" name="color" id="">
+            </div>
+            <div>
+                <label for="">Gender</label>
+                <input type="radio" name="gender" id="" value="male">Male
+                <input type="radio" name="gender" id="" value="femel">Femel
+            </div>
+            <div>
+                <label for="">Select Language</label>
+                <select name="" id="">
+                    <option value="java">Java</option>
+                    <option value="php">PHP</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="ruby">Ruby</option>
+                </select>
+            </div>
+            <div>
+                <label for="">DOB</label>
+                <input type="date" name="" id="">
+            </div>
+            <div>
+                <label for="">Select hobby</label>
+                <input type="checkbox" name="" id="" value="criket">Criket
+                <input type="checkbox" name="" id="" value="ludo">Ludo
+            </div>
+            <div>
+                <label for="">message</label> <br>
+                <textarea name="message" id="" cols="30" rows="2"></textarea>
+            </div>
+            <div>
+                <input type="submit" name="" id="">
+            </div>
+            <div>
+                <input type="reset" name="" id="">
+            </div>
+        </form>
+
+        <!-- iframe -->
+        <iframe src="" frameborder="0"></iframe>
+
+        <!-- Media -->
+         <video controls muted>
+            <source src="video URL" type="video/mp4">
+         </video>
+
+         <video src="URL" controls loop muted></video>
+
+         <!-- Audio  -->
+          <audio src="URL" controls muted></audio>
+
+</body>
+
+</html>
